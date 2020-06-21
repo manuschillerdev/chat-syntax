@@ -1,0 +1,31 @@
+{
+  "name": "chat-syntax",
+  "version": "1.0",
+  "description": "Syntax highlighting for Google Chat code blocks",
+  "permissions": [
+    "declarativeContent",
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://chat.google.com/*"
+      ],
+      "js": [
+        "prism.js",
+        "chat-highlighter.js"
+      ],
+      "css": [
+        "prism.css"
+      ]
+    }
+  ],
+  "background": {
+    "scripts": [
+      "prism.js"
+    ],
+    "persistent": false
+  },
+  "manifest_version": 2
+}
