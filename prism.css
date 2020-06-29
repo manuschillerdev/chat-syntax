@@ -6,6 +6,7 @@ https://prismjs.com/download.html#themes=prism&languages=markup+css+clike+javasc
  * @author Lea Verou
  */
 code[class*="language-"] * {
+	/* important to override chat styles */
 	font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace !important;
 }
 

@@ -1,12 +1,15 @@
 {
+  "manifest_version": 2,
   "name": "chat-syntax",
   "version": "1.0",
   "description": "Syntax highlighting for Google Chat code blocks",
-  "permissions": [
-    "declarativeContent",
-    "activeTab",
-    "storage"
-  ],
+  "permissions": ["activeTab"],
+  "icons": {
+    "16": "icon.png",
+    "32": "icon.png",
+    "48": "icon.png",
+    "128": "icon.png"
+  },
   "content_scripts": [
     {
       "matches": [
@@ -20,12 +23,5 @@
         "prism.css"
       ]
     }
-  ],
-  "background": {
-    "scripts": [
-      "prism.js"
-    ],
-    "persistent": false
-  },
-  "manifest_version": 2
+  ]
 }
